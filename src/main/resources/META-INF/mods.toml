@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="${loader_range}"
+license="MIT"
+issueTrackerURL="https://github.com/${github_project}/issues"
+
+[[mods]]
+modId="createcasings"
+version="${version}"
+displayName="Create: Casings"
+displayURL="https://github.com/${github_project}"
+logoFile="createcasings.png"
+credits="Thanks for this mod goes to the Create Team for making such a good mod and also to Cyvack!" #optional
+authors="IThundxr"
+description='''
+This mod adds tons of new types of casings to minecraft
+'''
+
+[[dependencies.createcasings]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.createcasings]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.modid]]
+modId="create"
+mandatory=true
+versionRange="${create_range}"
+ordering="NONE"
+side="BOTH"
