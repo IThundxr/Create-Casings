@@ -6,7 +6,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 
 public class CasingsTab {
-    public static final CreativeModeTab CASING_TAB = new CreativeModeTab("create_crystal_clear") {
+    public static final CreativeModeTab CASING_TAB = new CreativeModeTab("create-casings") {
         @Override
         public ItemStack makeIcon() {return Blocks.DIRT.asItem().getDefaultInstance();} //ModBlocks.MYBLOCK.asStack();}
     };

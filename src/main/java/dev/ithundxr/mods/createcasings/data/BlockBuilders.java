@@ -37,23 +37,30 @@ public class BlockBuilders {
 
     private static @NotNull Properties casingProperties(Properties p) {
         return p.isValidSpawn(BlockBuilders::never)
-                .isRedstoneConductor(BlockBuilders::never);
+                .isRedstoneConductor(BlockBuilders::always);
     }
 
-    private static boolean never(BlockState p_235436_0_, BlockGetter p_235436_1_, BlockPos p_235436_2_) {
+    private static boolean never(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
         return false;
     }
 
-    private static Boolean never(BlockState p_235427_0_, BlockGetter p_235427_1_, BlockPos p_235427_2_,
-                                 EntityType<?> p_235427_3_) {
+    private static Boolean never(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, EntityType<?> entityType) {
         return false;
+    }
+
+    private static boolean always(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
+        return true;
+    }
+
+    private static Boolean always(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, EntityType<?> entityType) {
+        return true;
     }
 
     public static BlockEntry<CasingBlock> casingblock(String name, Supplier<ConnectedTextureBehaviour> behaviour) {
         return REGISTRATE.block(name, CasingBlock::new)
                 .onRegister(connectedTextures(behaviour))
                 .properties(BlockBuilders::casingProperties)
-                .loot(BlockLoot::dropWhenSilkTouch)
+                .loot(BlockLoot::dropSelf)
                 .blockstate((c, p) -> BlockStateGen.cubeAll(c, p, "", c.getName()))
                 .tag(AllTags.AllBlockTags.CASING.tag)
 

@@ -9,20 +9,10 @@ import dev.ithundxr.mods.createcasings.CreateCasings;
 public class ModSpriteShifts {
     //Casings
     public static final CTSpriteShiftEntry
-            ANDESITE_GLASS_CASING = omni("andesite_glass_casing"),
-            BRASS_GLASS_CASING = omni("brass_glass_casing"),
-            COPPER_GLASS_CASING = omni("copper_glass_casing"),
-            STEEL_GLASS_CASING = omni("steel_glass_casing");
-
-    //Clear Glass Casings
-    public static final CTSpriteShiftEntry
-            ANDESITE_CLEAR_GLASS_CASING = omni("andesite_clear_glass_casing"),
-            BRASS_CLEAR_GLASS_CASING = omni("brass_clear_glass_casing"),
-            COPPER_CLEAR_GLASS_CASING = omni("copper_clear_glass_casing");
-
-    //Tinted Glass Casings
-    public static  final CTSpriteShiftEntry
-            STEEL_TINTED_GLASS_CASING = omni("steel_tinted_glass_casing");
+            DIAMOND_WARPED_CASING = omni("diamond_warped_casing");
+            //BRASS_GLASS_CASING = omni("brass_glass_casing"),
+            //COPPER_GLASS_CASING = omni("copper_glass_casing"),
+            //STEEL_GLASS_CASING = omni("steel_glass_casing");
 
 
     private static CTSpriteShiftEntry omni(String name) {

@@ -27,10 +27,10 @@ import net.minecraft.world.phys.HitResult;
 
 public class CasingEncasedShaftBlock extends AbstractEncasedShaftBlock implements ITE<KineticTileEntity>, ISpecialBlockItemRequirement {
 
-    private BlockEntry<CasingBlock> CasingBlock;
+    private final BlockEntry<CasingBlock> CasingBlock;
 
-    public static CasingEncasedShaftBlock andesiteglass(Properties properties) {
-        return new CasingEncasedShaftBlock(properties, ModBlocks.ANDESITE_GLASS_CASING);
+    public static CasingEncasedShaftBlock diamondwarped(Properties properties) {
+        return new CasingEncasedShaftBlock(properties, ModBlocks.DIAMOND_WARPED_CASING);
     }
     /*public static CasingEncasedShaftBlock andesiteclearglass(Properties properties) {
         return new CasingEncasedShaftBlock(properties, ModBlocks.ANDESITE_CLEAR_GLASS_CASING);
