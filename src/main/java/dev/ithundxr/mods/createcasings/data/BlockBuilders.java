@@ -59,6 +59,7 @@ public class BlockBuilders {
     public static BlockEntry<CasingBlock> casingblock(String name, Supplier<ConnectedTextureBehaviour> behaviour) {
         return REGISTRATE.block(name, CasingBlock::new)
                 .onRegister(connectedTextures(behaviour))
+                .initialProperties(AllBlocks.ANDESITE_CASING)
                 .properties(BlockBuilders::casingProperties)
                 .loot(BlockLoot::dropSelf)
                 .blockstate((c, p) -> BlockStateGen.cubeAll(c, p, "", c.getName()))

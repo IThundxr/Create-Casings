@@ -29,8 +29,8 @@ public class CasingEncasedShaftBlock extends AbstractEncasedShaftBlock implement
 
     private final BlockEntry<CasingBlock> CasingBlock;
 
-    public static CasingEncasedShaftBlock diamondwarped(Properties properties) {
-        return new CasingEncasedShaftBlock(properties, ModBlocks.DIAMOND_WARPED_CASING);
+    public static CasingEncasedShaftBlock gold(Properties properties) {
+        return new CasingEncasedShaftBlock(properties, ModBlocks.GOLD_CASING);
     }
     /*public static CasingEncasedShaftBlock andesiteclearglass(Properties properties) {
         return new CasingEncasedShaftBlock(properties, ModBlocks.ANDESITE_CLEAR_GLASS_CASING);

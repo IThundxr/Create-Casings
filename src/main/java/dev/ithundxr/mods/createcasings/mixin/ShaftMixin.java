@@ -28,7 +28,7 @@ public class ShaftMixin {
         ItemStack heldItem = player.getItemInHand(hand);
         for (CasingEncasedShaftBlock glassEncasedShaftBlock : new CasingEncasedShaftBlock[]
                 {
-                        ModBlocks.DIAMOND_WARPED_ENCASED_SHAFT.get()
+                        ModBlocks.GOLD_ENCASED_SHAFT.get()
                 }) {
 
             if (!glassEncasedShaftBlock.getCasing()

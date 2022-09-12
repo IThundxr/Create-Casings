@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "createcasings:block/diamond_warped_casing"
+    "all": "createcasings:block/gold_casing"
   }
 }

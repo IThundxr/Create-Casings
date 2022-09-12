@@ -1,0 +1,7 @@
+{
+	"parent": "createcasings:block/casing_encased_shaft/block",
+	"textures": {
+		"casing": "createcasings:block/gold_casing",
+		"opening": "create:block/gearbox"
+	}
+}

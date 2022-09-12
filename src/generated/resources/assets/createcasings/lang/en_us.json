@@ -1,4 +1,5 @@
 {
-  "block.createcasings.diamond_warped_casing": "Diamond Warped Casing",
+  "block.createcasings.gold_casing": "Gold Casing",
+  "block.createcasings.gold_encased_shaft": "Gold Encased Shaft",
   "itemGroup.create-casings": "Create: Casings"
 }

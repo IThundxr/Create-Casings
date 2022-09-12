@@ -19,12 +19,12 @@ public class ModBlocks {
 
 
     public static final BlockEntry<CasingBlock>
-            DIAMOND_WARPED_CASING = casingblock("diamond_warped_casing", () -> new SimpleCTBehaviour(ModSpriteShifts.DIAMOND_WARPED_CASING));
+            GOLD_CASING = casingblock("gold_casing", () -> new SimpleCTBehaviour(ModSpriteShifts.GOLD_CASING));
 
     public static final BlockEntry<CasingEncasedShaftBlock>
-            DIAMOND_WARPED_ENCASED_SHAFT = REGISTRATE
-            .block("diamond_warped_encased_shaft", CasingEncasedShaftBlock::diamondwarped)
-            .transform(BlockBuilders.casingencasedShaft("andesite_glass", () -> ModSpriteShifts.DIAMOND_WARPED_CASING))
+            GOLD_ENCASED_SHAFT = REGISTRATE
+            .block("gold_encased_shaft", CasingEncasedShaftBlock::gold)
+            .transform(BlockBuilders.casingencasedShaft("gold", () -> ModSpriteShifts.GOLD_CASING))
             .transform(axeOrPickaxe())
             .register();
 

@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "createcasings:diamond_warped_casing"
+          "name": "createcasings:gold_casing"
         }
       ],
       "conditions": [

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "createcasings:block/casing_encased_shaft/block_gold",
+      "x": 90,
+      "y": 90,
+      "uvlock": true
+    },
+    "axis=y": {
+      "model": "createcasings:block/casing_encased_shaft/block_gold",
+      "uvlock": true
+    },
+    "axis=z": {
+      "model": "createcasings:block/casing_encased_shaft/block_gold",
+      "x": 90,
+      "y": 180,
+      "uvlock": true
+    }
+  }
+}

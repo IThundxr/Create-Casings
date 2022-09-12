@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.Block;
 
 public class CasingBlock extends Block {
 
-    public CasingBlock(Properties p_53640_) {
-        super(p_53640_);
+    public CasingBlock(Properties properties) {
+        super(properties);
     }
 }
